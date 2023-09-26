@@ -41,7 +41,6 @@ public class LonelyInteger {
 
     public int solution(List<Integer> arr) {
         Map<Integer, Integer> mapCount = new HashMap<>();
-        int result = 0;
         for(int i: arr) {
             mapCount.put(i, mapCount.getOrDefault(i, 0)+1);
         }
