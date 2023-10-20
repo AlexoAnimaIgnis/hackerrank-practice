@@ -14,11 +14,11 @@ public class ThreeSum {
             while (left < right) {
                 int runningSum = arr[i] + arr[left] + arr[right];
 
-                if (runningSum == targetSum) {
+                if (targetSum == runningSum) {
                     return new int[]{
                             arr[i], arr[left], arr[right]
                     };
-                } else if( runningSum < targetSum) {
+                } else if (runningSum < targetSum) {
                     left++;
                 } else {
                     right--;
@@ -28,5 +28,4 @@ public class ThreeSum {
 
         return null;
     }
-
 }
